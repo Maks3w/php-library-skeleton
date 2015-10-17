@@ -1,6 +1,7 @@
 <?php
 
 return Symfony\CS\Config\Config::create()
+    ->setUsingCache(true)
     ->fixers(
         [
             '-concat_without_spaces',

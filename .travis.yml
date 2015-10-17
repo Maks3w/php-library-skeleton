@@ -5,6 +5,7 @@ language: php
 cache:
   directories:
     - $HOME/.composer/cache
+    - .php_cs.cache
     - vendor
 
 matrix:
