@@ -1,0 +1,26 @@
+{
+    "name": "maks3w/php-library-skeleton",
+    "description": "PHP Library skeleton",
+    "keywords": [
+    ],
+    "license": "BSD-2-Clause",
+    "require": {
+        "php": ">= 5.5"
+    },
+    "require-dev": {
+        "fabpot/php-cs-fixer": "~1.6",
+        "phpunit/phpunit": "~4.0"
+    },
+    "suggest": {
+    },
+    "autoload": {
+        "psr-4": {
+            "FR3D\\PhpLibrarySkeleton\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FR3D\\PhpLibrarySkeletonTest\\": "test/"
+        }
+    }
+}
