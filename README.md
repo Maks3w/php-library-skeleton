@@ -13,10 +13,6 @@ You can use [Composer](https://getcomposer.org) .
 composer create-project maks3w/php-library-skeleton <path>
 ```
 
-```bash
-composer require maks3w/php-library-skeleton
-```
-
 ## License
 
   Code licensed under BSD 2 clauses terms & conditions.
