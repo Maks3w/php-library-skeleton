@@ -5,6 +5,9 @@ namespace VendorTest\Component;
 use PHPUnit_Framework_TestCase as TestCase;
 use Vendor\Component\Dummy;
 
+/**
+ * @covers Vendor\Component\Dummy
+ */
 class DummyTest extends TestCase
 {
     private $dummy;
