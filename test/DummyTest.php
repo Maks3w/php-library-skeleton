@@ -11,7 +11,7 @@ class DummyTest extends TestCase
 
     protected function setUp()
     {
-        $this->dummy = new Dummy;
+        $this->dummy = new Dummy();
     }
 
     public function testDummy()
