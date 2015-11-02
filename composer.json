@@ -15,12 +15,12 @@
     },
     "autoload": {
         "psr-4": {
-            "FR3D\\PhpLibrarySkeleton\\": "src/"
+            "Vendor\\Component\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "FR3D\\PhpLibrarySkeletonTest\\": "test/"
+            "Vendor\\ComponentTest\\": "test/"
         }
     }
 }
