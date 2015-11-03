@@ -12,7 +12,7 @@ matrix:
   include:
     - php: 5.5
       env:
-        - COMPOSER_ARGUMENTS="--prefer-lowest"
+        - COMPOSER_ARGUMENTS=--prefer-lowest
     - php: 5.5
       env:
         - EXECUTE_CS_CHECK=true
