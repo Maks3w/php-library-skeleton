@@ -10,7 +10,7 @@ Skeleton for new projects with toolkit configured.
 You can use [Composer](https://getcomposer.org) .
 
 ```bash
-composer create-project maks3w/php-library-skeleton <path>
+composer create-project maks3w/php-library-skeleton:dev-master <path>
 ```
 
 ## License
