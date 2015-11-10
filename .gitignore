@@ -2,4 +2,5 @@
 clover.xml
 coveralls-upload.json
 composer.lock
+phpunit.xml
 vendor/
