@@ -29,10 +29,10 @@ install:
   - composer info -i
 
 script:
-  - if [[ $EXECUTE_TEST_COVERALLS == 'true' ]]; then vendor/bin/phpunit --coverage-clover clover.xml; fi
-  - if [[ $EXECUTE_TEST_COVERALLS != 'true' ]]; then vendor/bin/phpunit; fi
+  - if [[ $EXECUTE_TEST_COVERALLS == 'true' ]]; then composer test-coverage; fi
+  - if [[ $EXECUTE_TEST_COVERALLS != 'true' ]]; then composer test; fi
 
-  - if [[ $EXECUTE_CS_CHECK == 'true' ]]; then vendor/bin/php-cs-fixer fix -v --dry-run; fi
+  - if [[ $EXECUTE_CS_CHECK == 'true' ]]; then composer cs-check; fi
 
 after_script:
   - if [[ $EXECUTE_TEST_COVERALLS == 'true' ]]; then
