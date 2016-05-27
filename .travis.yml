@@ -29,10 +29,10 @@ install:
   - composer info -i
 
 script:
-  - if [[ $EXECUTE_TEST_COVERALLS == 'true' ]]; then composer test-coverage; fi
-  - if [[ $EXECUTE_TEST_COVERALLS != 'true' ]]; then composer test; fi
+  - if [[ $EXECUTE_TEST_COVERALLS == 'true' ]]; then composer test-coverage -- --colors=always; fi
+  - if [[ $EXECUTE_TEST_COVERALLS != 'true' ]]; then composer test -- --colors=always; fi
 
-  - if [[ $EXECUTE_CS_CHECK == 'true' ]]; then composer cs-check; fi
+  - if [[ $EXECUTE_CS_CHECK == 'true' ]]; then composer cs-check -- --ansi; fi
 
 after_script:
   - if [[ $EXECUTE_TEST_COVERALLS == 'true' ]]; then
