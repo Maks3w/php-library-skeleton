@@ -36,7 +36,7 @@ script:
 
 after_script:
   - if [[ $EXECUTE_TEST_COVERALLS == 'true' ]]; then
-    wget https://github.com/satooshi/php-coveralls/releases/download/v1.0.1/coveralls.phar;
+    travis_retry wget https://github.com/satooshi/php-coveralls/releases/download/v1.0.1/coveralls.phar;
     chmod +x coveralls.phar;
-    php coveralls.phar -v;
+    travis_retry php coveralls.phar -v;
     fi
